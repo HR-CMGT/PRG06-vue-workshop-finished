@@ -1,11 +1,15 @@
 <template>
     <div>
-        <navigation :loading="loading" v-on:navclicked="showList" v-on:setgrid="setGrid"></navigation>
+        <navigation :loading="loading" v-on:setgrid="setGrid"></navigation>
 
-        <detail v-if="detailVisible" :movie="filmdetail"></detail>
+        <div class="columns">
 
-        <div v-else class="cards">
-            <card v-for="(f,index) in films" :key="f.episode_id" :movie="f" :display="gridstyle" v-on:movieclicked="selectDetail(index)"></card>
+            <div class="cards">
+                <card v-for="(f,index) in films" :key="f.episode_id" :movie="f" :display="gridstyle" v-on:movieclicked="addToList(index)"></card>
+            </div>
+
+            <watchlist v-if="watchlater.length > 0" :watchlater="watchlater" v-on:listitemclicked="removeFromList"></watchlist>
+
         </div>
     </div>
 </template>
@@ -14,24 +18,20 @@
 import { Vue, Component, Prop } from "vue-property-decorator"
 import Card from "./card.vue"
 import Navigation from "./navigation.vue"
-import Detail from "./detail.vue"
+import Watchlist from "./watchlist.vue"
 import DataLoader from "../services/DataLoader"
 
 @Component({
-    components: {Card, Navigation, Detail}
+    components: {Card, Navigation, Watchlist}
 })
 
 export default class App extends Vue {
     films: Film[] = []
-    filmdetail:Film = {} as Film
+    watchlater :Film[] = []
     loading: boolean = false
     gridstyle:string = "card"
     created(){
         this.loadContent("films")
-    }
-    showList(type:string){
-        // TODO actor menu item werkt nog niet
-        this.filmdetail = {} as Film;
     }
     loadContent(type:string){
         this.loading = true
@@ -44,14 +44,14 @@ export default class App extends Vue {
             this.loading = false
         })
     }
-    selectDetail(i:number){
-        this.filmdetail = this.films[i]
+    addToList(i:number){
+        this.watchlater.push(this.films[i])
+    }
+    removeFromList(i:number){
+        this.watchlater.splice(i,1)
     }
     setGrid(s:string){
         this.gridstyle = s
-    }
-    get detailVisible():boolean {
-        return (this.filmdetail.title != undefined)
     }
 }
 </script>
@@ -79,6 +79,9 @@ div {
 .cards {
     width:100vw;
     display:flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;  /*cards can go to the next line*/
+}
+.columns {
+    display:flex;
 }
 </style>

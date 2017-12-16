@@ -28,7 +28,7 @@ export default class Card extends Vue {
         this.$emit('movieclicked')
     }
     get shortIntro():string {
-        return this.movie.opening_crawl.substring(0,80) + "..."
+        return this.movie.opening_crawl.substring(0,60) + "...<br>Add to watchlist"
     }
 }
 </script>
