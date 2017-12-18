@@ -1,0 +1,258 @@
+{
+    "items": [
+        {
+            "_id": "5a326f52d239bf7955a77419",
+            "title": "Batman Begins",
+            "genre": "Action",
+            "director": "Christopher Nolan",
+            "__v": 0,
+            "_links": {
+                "self": {
+                    "href": "http://95.85.35.193:8000/api/movies/5a326f52d239bf7955a77419"
+                },
+                "collection": {
+                    "href": "http://95.85.35.193:8000/api/movies/"
+                }
+            }
+        },
+        {
+            "_id": "5a326fb2d239bf7955a7741a",
+            "title": "The Dark Knight",
+            "genre": "Action",
+            "director": "Christopher Nolan",
+            "__v": 0,
+            "_links": {
+                "self": {
+                    "href": "http://95.85.35.193:8000/api/movies/5a326fb2d239bf7955a7741a"
+                },
+                "collection": {
+                    "href": "http://95.85.35.193:8000/api/movies/"
+                }
+            }
+        },
+        {
+            "_id": "5a326fbed239bf7955a7741b",
+            "title": "The Dark Knight Rises",
+            "genre": "Action",
+            "director": "Christopher Nolan",
+            "__v": 0,
+            "_links": {
+                "self": {
+                    "href": "http://95.85.35.193:8000/api/movies/5a326fbed239bf7955a7741b"
+                },
+                "collection": {
+                    "href": "http://95.85.35.193:8000/api/movies/"
+                }
+            }
+        },
+        {
+            "_id": "5a326fcad239bf7955a7741c",
+            "title": "Reservoir Dogs",
+            "genre": "Crime",
+            "director": "Quentin Tarantino",
+            "__v": 0,
+            "_links": {
+                "self": {
+                    "href": "http://95.85.35.193:8000/api/movies/5a326fcad239bf7955a7741c"
+                },
+                "collection": {
+                    "href": "http://95.85.35.193:8000/api/movies/"
+                }
+            }
+        },
+        {
+            "_id": "5a326fe1d239bf7955a7741d",
+            "title": "Pulp Fiction",
+            "genre": "Crime",
+            "director": "Henry Kuttner",
+            "__v": 0,
+            "_links": {
+                "self": {
+                    "href": "http://95.85.35.193:8000/api/movies/5a326fe1d239bf7955a7741d"
+                },
+                "collection": {
+                    "href": "http://95.85.35.193:8000/api/movies/"
+                }
+            }
+        },
+        {
+            "_id": "5a326fecd239bf7955a7741e",
+            "title": "Forrest Gump",
+            "genre": "Drama",
+            "director": "Robert Zemeckis",
+            "__v": 0,
+            "_links": {
+                "self": {
+                    "href": "http://95.85.35.193:8000/api/movies/5a326fecd239bf7955a7741e"
+                },
+                "collection": {
+                    "href": "http://95.85.35.193:8000/api/movies/"
+                }
+            }
+        },
+        {
+            "_id": "5a326ffad239bf7955a7741f",
+            "title": "Cast Away",
+            "genre": "Drama",
+            "director": "Robert Zemeckis",
+            "__v": 0,
+            "_links": {
+                "self": {
+                    "href": "http://95.85.35.193:8000/api/movies/5a326ffad239bf7955a7741f"
+                },
+                "collection": {
+                    "href": "http://95.85.35.193:8000/api/movies/"
+                }
+            }
+        },
+        {
+            "_id": "5a327008d239bf7955a77420",
+            "title": "The Matrix",
+            "genre": "Science fiction",
+            "director": "The Wachowski Brothers",
+            "__v": 0,
+            "_links": {
+                "self": {
+                    "href": "http://95.85.35.193:8000/api/movies/5a327008d239bf7955a77420"
+                },
+                "collection": {
+                    "href": "http://95.85.35.193:8000/api/movies/"
+                }
+            }
+        },
+        {
+            "_id": "5a327016d239bf7955a77421",
+            "title": "Up",
+            "genre": "Animation",
+            "director": "Pete Docter",
+            "__v": 0,
+            "_links": {
+                "self": {
+                    "href": "http://95.85.35.193:8000/api/movies/5a327016d239bf7955a77421"
+                },
+                "collection": {
+                    "href": "http://95.85.35.193:8000/api/movies/"
+                }
+            }
+        },
+        {
+            "_id": "5a327023d239bf7955a77422",
+            "title": "The 40 Year Old Virgin",
+            "genre": "Comedy",
+            "director": " Judd Apatow",
+            "__v": 0,
+            "_links": {
+                "self": {
+                    "href": "http://95.85.35.193:8000/api/movies/5a327023d239bf7955a77422"
+                },
+                "collection": {
+                    "href": "http://95.85.35.193:8000/api/movies/"
+                }
+            }
+        },
+        {
+            "_id": "5a32716bd239bf7955a77424",
+            "title": "Check Webservice - 3152160",
+            "genre": "Check Webservice - 3152160",
+            "director": "Check Webservice - 3152160",
+            "__v": 0,
+            "_links": {
+                "self": {
+                    "href": "http://95.85.35.193:8000/api/movies/5a32716bd239bf7955a77424"
+                },
+                "collection": {
+                    "href": "http://95.85.35.193:8000/api/movies/"
+                }
+            }
+        },
+        {
+            "_id": "5a327acc0b504a7b17528a32",
+            "title": "Check Webservice - 3224796",
+            "genre": "Check Webservice - 3224796",
+            "director": "Check Webservice - 3224796",
+            "__v": 0,
+            "_links": {
+                "self": {
+                    "href": "http://95.85.35.193:8000/api/movies/5a327acc0b504a7b17528a32"
+                },
+                "collection": {
+                    "href": "http://95.85.35.193:8000/api/movies/"
+                }
+            }
+        },
+        {
+            "_id": "5a3284ee0b504a7b17528a34",
+            "title": "Check Webservice - 8487145",
+            "genre": "Check Webservice - 8487145",
+            "director": "Check Webservice - 8487145",
+            "__v": 0,
+            "_links": {
+                "self": {
+                    "href": "http://95.85.35.193:8000/api/movies/5a3284ee0b504a7b17528a34"
+                },
+                "collection": {
+                    "href": "http://95.85.35.193:8000/api/movies/"
+                }
+            }
+        },
+        {
+            "_id": "5a3285639456947bd92e8fc0",
+            "title": "Check Webservice - 9038770",
+            "genre": "Check Webservice - 9038770",
+            "director": "Check Webservice - 9038770",
+            "__v": 0,
+            "_links": {
+                "self": {
+                    "href": "http://95.85.35.193:8000/api/movies/5a3285639456947bd92e8fc0"
+                },
+                "collection": {
+                    "href": "http://95.85.35.193:8000/api/movies/"
+                }
+            }
+        },
+        {
+            "_id": "5a32f4274403280971ade88d",
+            "title": "Check Webservice - 8372806",
+            "genre": "Check Webservice - 8372806",
+            "director": "Check Webservice - 8372806",
+            "__v": 0,
+            "_links": {
+                "self": {
+                    "href": "http://95.85.35.193:8000/api/movies/5a32f4274403280971ade88d"
+                },
+                "collection": {
+                    "href": "http://95.85.35.193:8000/api/movies/"
+                }
+            }
+        }
+    ],
+    "_links": {
+        "self": {
+            "href": "http://95.85.35.193:8000/api/movies/"
+        }
+    },
+    "pagination": {
+        "currentPage": "test",
+        "currentItems": "totaal aantal items",
+        "totalPages": "kaas",
+        "totalItems": "alles",
+        "_links": {
+            "first": {
+                "page": "een",
+                "href": "http://95.85.35.193:8000/api/movies/"
+            },
+            "last": {
+                "page": "een",
+                "href": "http://95.85.35.193:8000/api/movies/"
+            },
+            "previous": {
+                "page": "een",
+                "href": "http://95.85.35.193:8000/api/movies/"
+            },
+            "next": {
+                "page": "een",
+                "href": "http://95.85.35.193:8000/api/movies/"
+            }
+        }
+    }
+}

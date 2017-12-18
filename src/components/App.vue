@@ -1,15 +1,11 @@
 <template>
     <div>
         <navigation :loading="loading" v-on:setgrid="setGrid"></navigation>
-
         <div class="columns">
-
             <div class="cards">
                 <card v-for="(f,index) in films" :key="f.episode_id" :movie="f" :display="gridstyle" v-on:movieclicked="addToList(index)"></card>
             </div>
-
             <watchlist v-if="watchlater.length > 0" :watchlater="watchlater" v-on:listitemclicked="removeFromList"></watchlist>
-
         </div>
     </div>
 </template>
@@ -31,18 +27,20 @@ export default class App extends Vue {
     loading: boolean = false
     gridstyle:string = "card"
     created(){
-        this.loadContent("films")
-    }
-    loadContent(type:string){
         this.loading = true
+        // STUDENT JSON - let op data staat in data.items, niet in data.results
+        // const url = "http://95.85.35.193:8000/api/movies/"
         // LIVE ONLINE URL
-        // const url = `https://swapi.co/api/${type}/`
-        // LOCAL TEST DATA
-        const url = `./data/${type}.json`
-        DataLoader.loadJSON(url).then(data => { 
-            this.films = data.results
-            this.loading = false
-        })
+        const url = `https://swapi.co/api/films/`
+
+        DataLoader.loadJSON(url)
+            .then(data => {
+                this.films = data.results
+                this.loading = false
+            }, error => {
+                console.log("error loading data!")
+            })
+
     }
     addToList(i:number){
         this.watchlater.push(this.films[i])
