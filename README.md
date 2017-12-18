@@ -2,7 +2,7 @@
 
 Finished files for [the PRG06 Vue workshop](https://github.com/HR-CMGT/vue-workshop)
 
-![Screenshot](./dist/images/screenshot.png)
+![Screenshot](https://raw.githubusercontent.com/HR-CMGT/vue-workshop/master/presentation/screenshot.png)
 
 ## Using
 
@@ -17,17 +17,28 @@ webpack --watch
 
 ## Reading List
 
-- [Vue documentation: Introduction](https://vuejs.org/v2/guide/index.html)
+### Documentation
+
+- [Introduction](https://vuejs.org/v2/guide/index.html)
+- [Single File Components](https://vuejs.org/v2/guide/single-file-components.html)
+- [Typescript support](https://vuejs.org/v2/guide/typescript.html)
+- [Class Component](https://github.com/vuejs/vue-class-component)
+- [Working with import and export](https://www.typescriptlang.org/docs/handbook/modules.html)
+
+### Tutorials and examples
+
 - [5 practical examples for learning Vue.js](https://tutorialzine.com/2016/03/5-practical-examples-for-learning-vue-js)
-- [Vue documentation: Single File Components](https://vuejs.org/v2/guide/single-file-components.html)
+- [This year's top Vue tutorials](https://reactdom.com/blog/vuejs-books)
+- [Vue courses on egghead.io](https://egghead.io/browse/frameworks/vue)
+- [Using Class Component with Typescript](https://alligator.io/vuejs/typescript-class-components/)
+- [Huge list of Vue Examples and readymade components](https://github.com/vuejs/awesome-vue)
 - [CSS Tricks: introduction to Vue](https://css-tricks.com/intro-to-vue-1-rendering-directives-events/)
-- [Typescript Class Components tutorial](https://alligator.io/vuejs/typescript-class-components/)
-- [Vue Class Component on github](https://github.com/vuejs/vue-class-component)
-- [Vue documentation: typescript support](https://vuejs.org/v2/guide/typescript.html)
-- [Using Vue components without Webpack](https://vuejsdevelopers.com/2017/09/24/vue-js-single-file-javascript-components/)
 - [Microsoft Typescript Vue Starter](https://github.com/Microsoft/TypeScript-Vue-Starter)
-- [Previous Typescript examples HR CMGT](https://github.com/HR-CMGT/Typescript)
+- [Binding Styles in Vue](https://vuejs.org/v2/guide/class-and-style.html)
+
+### Related
+
+- [Typescript HR CMGT](https://github.com/HR-CMGT/Typescript)
 - [Using Headers with Fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
 - [Using Promises](https://davidwalsh.name/promises)
 - [Using Async Await](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)
-- [Binding Styles in Vue](https://vuejs.org/v2/guide/class-and-style.html)
