@@ -1,8 +1,7 @@
 <template>
     <div id="navigation">
-        <div class="button" :class='{ disabled: loading }' @click='loadMovies("films")'>Movies</div>
-        <div class="button" :class='{ disabled: loading }' @click='loadMovies("people")'>Actors</div>
-        <div v-if="loading==true">Loading...</div>
+        <div class="button">Movies</div>
+        <div class="button">Actors</div>
         <div id="divider"></div>
         <div class="button" @click='setGrid("card")'>Grid</div>
         <div class="button" @click='setGrid("list")'>List</div>
@@ -14,10 +13,6 @@ import { Vue, Component, Prop } from "vue-property-decorator";
 
 @Component
 export default class Navigation extends Vue {
-    @Prop() loading: boolean
-    loadMovies(s:string){
-        this.$emit('navclicked', s)
-    }
     setGrid(s:string){
         this.$emit('setgrid', s)
     }

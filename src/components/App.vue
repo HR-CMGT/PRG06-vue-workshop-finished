@@ -1,6 +1,6 @@
 <template>
     <div>
-        <navigation :loading="loading" v-on:setgrid="setGrid"></navigation>
+        <navigation v-on:setgrid="setGrid"></navigation>
         <div class="columns">
             <div class="cards">
                 <card v-for="(f,index) in films" :key="f.episode_id" :movie="f" :display="gridstyle" v-on:movieclicked="addToList(index)"></card>
@@ -24,23 +24,12 @@ import DataLoader from "../services/DataLoader"
 export default class App extends Vue {
     films: Film[] = []
     watchlater :Film[] = []
-    loading: boolean = false
     gridstyle:string = "card"
     created(){
-        this.loading = true
-        // STUDENT JSON - let op data staat in data.items, niet in data.results
-        // const url = "http://95.85.35.193:8000/api/movies/"
-        // LIVE ONLINE URL
-        const url = `https://swapi.co/api/films/`
-
-        DataLoader.loadJSON(url)
-            .then(data => {
-                this.films = data.results
-                this.loading = false
-            }, error => {
-                console.log("error loading data!")
-            })
-
+        this.loadData()
+    }
+    async loadData(){
+        this.films = await DataLoader.loadJSON(`https://swapi.co/api/films/`)
     }
     addToList(i:number){
         this.watchlater.push(this.films[i])
