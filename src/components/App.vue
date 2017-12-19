@@ -29,7 +29,7 @@ export default class App extends Vue {
         this.loadData()
     }
     async loadData(){
-        this.films = await DataLoader.loadJSON(`https://swapi.co/api/films/`)
+        this.films = (await DataLoader.loadJSON(`https://swapi.co/api/films/`)).results
     }
     addToList(i:number){
         this.watchlater.push(this.films[i])
